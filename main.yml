@@ -1,0 +1,11 @@
+---
+# tasks file for ansible_role_ansible
+
+- name: "Ansible | Install Ansible"
+  yum:
+    name: ansible
+    state: present
+    enablerepo: epel
+  tags:
+    - install
+    - ansible
